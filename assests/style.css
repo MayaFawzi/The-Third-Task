@@ -1,0 +1,406 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    padding: 20px 50px;
+    color: #ffffff;
+    background-color:#006072;
+    z-index: 1000;
+    }
+.navbar{
+    width: 35%;
+    margin-right: 30px;
+}
+.header p{
+    width: 65%;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar ul li{
+    margin-left:10px ;
+}
+.header .navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.hero {
+    width: 100vw;
+    height: 325px;
+    background: linear-gradient(#4d093b,pink);
+    color:#4d093b;
+    padding: 50px 0px 20PX 0PX;
+    display: flex;
+    justify-content: center;
+}
+.hero img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-left:140px;
+}
+.hero .content{
+    width: max-content;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hero .content h1{
+    text-align: center;
+    padding: 10px 0px;}
+.icon{
+    display: flex;
+    justify-content: center;
+    padding:5px 0px;
+    position:relative;
+}
+.icon::before{
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #4d093b;
+    position: relative;
+    right: 10px;
+    top:7px
+}
+.icon::after{
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #4d093b;
+    position: relative;
+    left: 10px;
+    top:7px;
+}
+.hero .content p{
+    padding: 10px 0px;
+    font-weight: 200px;
+}/*END HERO*/
+.skills{
+    /* padding: 10px 50px 30px 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills .first-raw .one , .skills  .first-raw .two , .skills .first-raw .three,
+.skills .second-raw .one , .skills  .second-raw .two , .skills .second-raw .three{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.skills .second-raw .one img,.skills .first-raw .two img,.skills .first-raw .three img,.skills .first-raw .one img,
+.skills .second-raw .three img,.skills .second-raw .two img{
+    border: 1px solid white;
+    border-radius: 50px;
+}
+.skills .first-raw {
+    width:60%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.skills .second-raw{
+    width: 60%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills .first-raw .one , .skills  .first-raw .two , .skills .first-raw .three,
+.skills .second-raw .one , .skills  .second-raw .two , .skills .second-raw .three{
+    width: 150px;
+    height: 150px;
+    border: #08083a 1px solid;
+    border-radius: 50px;
+    box-shadow:inset 0 -3em 3em #006072;
+    margin-top: 10px;
+}
+.title{
+    padding: 30px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#4d093b;
+}
+.about{
+    width: 100vw;
+    background-color: rgb(248, 165, 179);
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    width: 60%;
+    display: flex;
+}
+.containr {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.content .p1{
+    width:50%
+}
+.content .p2{
+    width: 50%;
+    padding-left: 20px;
+}
+.about button{
+    padding: 10px;
+    width:max-content;
+    border: 1px dashed white;
+    color: black;
+    background-color: #f3a6b3;
+    margin:10px auto 50px auto;
+}
+.about button i{
+    margin-right: 5px;
+}
+.contact{
+    width: 100vw;
+}
+.contact .content form input{
+    padding: 10px;
+    width: 500px;
+    margin-top: 10px;
+    border: 1px solid white;
+    border-bottom: 1px solid gray;
+}
+.contact .content textarea{
+    padding: 10px;
+    width: 500px;
+    margin-top: 10px;
+    border: 1px solid white;
+    border-bottom: 1px solid gray;
+}
+.contact .content button{
+    margin: 10px 410px 0 0;
+    padding: 10px 20px;
+    background-color:rgb(243, 154, 168) ;
+    border: 1px solid rgb(230, 112, 131);
+    color:white;
+    border-radius: 10px;
+    align-self:center;
+}
+.contact .content{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.contact .content .form{
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    display: flex;
+    background-color: #006072;
+    justify-content: space-around;
+    padding: 20px;
+}
+.footer .two h3{
+    margin-bottom: 10px;
+}
+
+.footer  h3{
+    text-align: center;
+}
+.footer .two .ico{
+    border:1px solid white;
+    padding: 5px;
+    border-radius: 200%;
+    margin-left:5px ;
+}
+.footer .icons{
+    text-align: center;
+}
+.footer .three a{
+    color:hotpink;
+}
+.end{
+    width: 100%;
+    background-color: #08083a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    padding: 10px;
+}
+@media(min-width:320px) and (max-width:480px) {
+    .header{
+        position: fixed;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navbar ul{
+        padding: 5px;
+    }
+    .header p{
+        display: block;
+        text-align: center;
+    }
+    .hero .content{
+        margin-top: 40px;
+    }
+    .skills{
+        width: 100vw;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills .first-raw {
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .skills .second-raw{
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .skills .first-raw .one , .skills  .first-raw .two , .skills .first-raw .three,
+    .skills .second-raw .one , .skills  .second-raw .two , .skills .second-raw .three{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    .about button{
+        padding: 5px;
+        background-color: pink;
+    }
+    .contact .content form input{
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid white;
+        border-bottom: 1px solid gray;
+    }
+    .contact .content textarea{
+        width: 42%;
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid white;
+        border-bottom: 1px solid gray;
+    }
+    .contact .content button{
+        padding: 10px 20px;
+        background-color:rgb(243, 154, 168) ;
+        border: 1px solid rgb(230, 112, 131);
+        color:white;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-right: 110px 
+    }
+    .footer{
+        background-color: #006072;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footer .two h3{
+        padding: 20px;
+    }
+    .footer .one h3,.footer .three h3{
+        padding: 5px;
+    }
+    .footer .one,.footer .two ,.footer .three{
+        margin-bottom: 5px;
+    }
+}
+@media(min-width:869px)and(max-width:1500px) {
+    .skills{
+        padding: 10px 50px 30px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills .first-raw .one , .skills  .first-raw .two , .skills .first-raw .three,
+    .skills .second-raw .one , .skills  .second-raw .two , .skills .second-raw .three{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    .skills .second-raw .one img,.skills .first-raw .two img,.skills .first-raw .three img,.skills .first-raw .one img,
+    .skills .second-raw .three img,.skills .second-raw .two img{
+        border: 1px solid white;
+        border-radius: 50px;
+    }
+    .skills .first-raw {
+        width:60%;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .skills .second-raw{
+        width: 60%;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact .content form input{
+        padding: 10px;
+        width: 500px;
+        margin-top: 10px;
+        border: 1px solid white;
+        border-bottom: 1px solid gray;
+    }
+    .contact .content textarea{
+        padding: 10px;
+        width: 500px;
+        margin-top: 10px;
+        border: 1px solid white;
+        border-bottom: 1px solid gray;
+    }
+    .contact .content button{
+        margin: 10px 410px 0 0;
+        padding: 10px 20px;
+        color:white;
+        border-radius: 10px;
+        align-self:center;
+    }
+    .footer{
+        display: flex;
+        background-color: #006072;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+    .footer .one{
+        width: 15%;
+    }
+    .footer .two{
+        width: 30%;
+        height: 100px;
+    }
+    .footer .three{
+        width: 30%;
+    }
+    .footer h3{
+        padding: 20px;
+    }
+
+}
